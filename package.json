@@ -9,8 +9,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "descrição de cargos",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bioleve-oficial/cargos-bioleve.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bioleve-oficial/cargos-bioleve/issues"
+  },
+  "homepage": "https://github.com/bioleve-oficial/cargos-bioleve#readme"
 }

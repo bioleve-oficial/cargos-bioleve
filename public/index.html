@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,35 +7,44 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <img id="logo" src="img/logo.png" alt="Logo da Empresa" />
+  <div class="container">
+    <img class="logo" src="img/logo.png" alt="Logo Bioleve" />
+    <h1></h1>
 
-  <div id="search-container">
-    🔍 <input type="text" id="search" placeholder="Digite seu cargo..." /> 
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Digite o nome do cargo..." />
+      <button id="searchButton">🔍</button>
+    </div>
+
+    <h2 class="texto">Clique na sua área de trabalho abaixo e visualize o seu cargo! =)</h2>
+
+    <div class="main-cards">
+      <div class="main-card" data-area="administracao">ADMINISTRAÇÃO</div>
+      <div class="main-card" data-area="fabrica">FÁBRICA</div>
+    </div>
+
+    <div id="departments" class="departments"></div>
   </div>
 
-  <h2>Clique na sua área de trabalho abaixo! =)</h2>
-  <div class="categorias-flex">
-    <div class="categoria-card" onclick="toggleCategoria('admin-container')">
-      <h2>ADMINISTRAÇÃO</h2>
-    </div>
-    <div class="categoria-card" onclick="toggleCategoria('fabrica-container')">
-      <h2>FÁBRICA</h2>
-    </div>
-  </div>
-
-  <div id="admin-container" class="cards-container" style="display: none;"></div>
-  <div id="fabrica-container" class="cards-container" style="display: none;"></div>
-
-  <div id="modal" class="modal">
+  <!-- Modal de cargo -->
+  <div id="modal" class="modal hidden">
     <div class="modal-content">
-      <h2 id="modal-title"></h2>
-      <p id="modal-description"></p>
-      <button class="close" onclick="fecharModal()">Fechar</button>
+      <span id="closeModal" class="close-button">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <p id="modalCompetencia" style="margin-top: 10px; font-weight: bold;"></p>
+
+    </div>
+  </div>
+
+  <!-- Modal de erro -->
+  <div id="modalErro" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModalErro" class="close-button">&times;</span>
+      <h2>Ops, nenhum cargo encontrado.</h2>
     </div>
   </div>
 
   <script src="script.js"></script>
-
-  
 </body>
 </html>
