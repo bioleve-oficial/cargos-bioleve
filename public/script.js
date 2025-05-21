@@ -40,6 +40,12 @@ const data = {
     "Contas a Pagar - SBC": [
       {nome: "Auxiliar Administrativo      ", descricao: "Executar tarefas de rotina administrativa, envolvendo digitação, arquivo, distribuição de correspondência, atendimento de telefone e serviços externos, observando as regras e procedimentos estabelecidos. Separar, ordenar e arquivar os documentos, por tipo e origem, utilizando-se de pastas ou caixas apropriadas, observando as regras e procedimentos estabelecidos.      ", competencia: "Cultura De Segurança; Disciplina; Flexibilidade; Iniciativa; Visão Do Negocio.      "},
     ],
+    "GC Diretoria Comercial": [
+      {nome: "Diretor Comercial", descricao: "Responder pela direção da empresa, nas atividades relacionadas área Comercial/Mercado. Planejar, organizar e controlar os programas e sua execução, avaliar resultados, segundo a política específica e a política comercial, para assegurar a venda dos produtos fabricados em condições que atendam aos resultados previstos.      ", competencia: "Cultura De Segurança; Liderança; Visão Sistemica; Planejamento De Futuro; Gestão De Mudança; Gestão Estratégica"}
+    ],
+    "DIS Coord Campinas": [
+      {nome: "Consultor Comercial      ", descricao: "Responder pelas atividades de consultoria, em assuntos referentes à área Comercial, compreendendo: diagnósticos, planejamento estratégico de atuação, desenvolvimento dos trabalhos, propondo alternativas e soluções à Direção da empresa.      ", competencia: "Cultura De Segurança; Disciplina; Flexibilidade; Iniciativa; Visão Do Negocio;       "}
+    ],
   },
   fabrica: {
     Expedição: [
@@ -89,6 +95,9 @@ const data = {
       { nome: "Gerente Controle Qualidade I", descricao: "Supervisiona e gerencia toda a área da qualidade, bem como as coletas, matérias primas, análises físico químico, microbiológicos e todos os processos do controle de qualidade. Coordena a área de ped e assuntos regulatórios. Realiza auditorias tratativas com fornecedores e clientes. Exerce treinamentos.", competencia: "Cultura de segurança; liderança; visão sistemica; planejamento de futuro; gestão de mudanças; gestão estratégica; " },
       { nome: "Analista Controle Qualidade I  ", descricao: "Realiza a liberação de produtos para a linha de envase. Exerce as conferências de ordem de produção e de matérias primas no preparo dos produtos. Atua no revezamento do acompanhamento das linhas de produção e testes pertinentes. Faz o recebimento de materiais, e análise físico químicos. Exerce o teste e aprovação de novos fornecedores e o desenvolvimento de produtos.", competencia: "Cultura de segurança; flexibilidade; iniciativa; visão do negocio; trabalho em equipe; gestão do conhecimento." },
       { nome: "Analista Controle Qualidade III", descricao: "Realiza a análise microbiológica para a verificação da qualidade dos produtos da divisão suco para ter o controle dos microorganismos. Atua na preparação e no descarte de material microbiológico gerado no laboratório. Realiza análises físico químico. Atua na conferência de matérias primas para o preparo dos produtos. Opera na liberação de produtos para a linha de envase. Efetua o revezamento do acompanhamento das linhas de produção e testes pertinentes. Faz o recebimento de testes de materiais e o desenvolvimento de procedimentos da área de qualidade.", competencia: "Cultura de segurança; flexibilidade; iniciativa; visão do negocio; trabalho em equipe; gestão do conhecimento." }
+    ],
+    Produção: [
+      {nome: "", descricao: "", competencia: ""}
     ]
   }
 };
