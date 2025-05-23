@@ -5,6 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cargos Bioleve</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .modal-bemvindo {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content-bemvindo {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 900px;
+      max-height: 90%;
+      overflow-y: auto;
+    }
+
+    .close-button-bemvindo {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .modal-content-bemvindo h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .modal-content-bemvindo p {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -33,7 +73,6 @@
       <h2 id="modalTitle"></h2>
       <p id="modalDescription"></p>
       <p id="modalCompetencia" style="margin-top: 10px; font-weight: bold;"></p>
-
     </div>
   </div>
 
@@ -44,6 +83,48 @@
       <h2>Ops, nenhum cargo encontrado.</h2>
     </div>
   </div>
+
+  <!-- Modal de Boas-Vindas -->
+  <div id="modalBemVindo" class="modal-bemvindo">
+    <div class="modal-content-bemvindo">
+      <span class="close-button-bemvindo" id="closeBemVindo">&times;</span>
+      <h2>BEM-VINDOS À VISUALIZAÇÃO DE CARGOS BIOLEVE</h2>
+      <p><strong>ABAIXO ESTÁ AS COMPETÊNCIAS QUE DEVEM TER CIÊNCIA:</strong></p>
+      <p><strong>CULTURA DE SEGURANÇA:</strong> Ser um estímulo a seus colegas para se envolverem diretamente na prevenção de acidentes. Colaborador precisa estar atento às condições e ações da companhia para alertar a todo momento qualquer situação de risco.</p>
+      <p><strong>FLEXIBILIDADE:</strong> Profissionais que se ajustem às mais diversas situações, mobilizando seu conhecimento e experiências para aproveitá-las de forma produtiva e se inserindo no local de trabalho de forma colaborativa se comprometendo até o final da implementação da mudança.</p>
+      <p><strong>DISCIPLINA:</strong> Apresenta disciplina na execução das atividades assegurando que suas entregas atendam ao prazo, ao custo e à qualidade determinados bem como, respeito às diretrizes internas, como normas circulares e regulamentos.</p>
+      <p><strong>INICIATIVA:</strong> Ser proativo. Colaboradores que percebem rapidamente os problemas e oportunidades e, mais que isso, prontificam-se a resolvê-los. Agir com velocidade e inovação.</p>
+      <p><strong>VISÃO DO NEGÓCIO:</strong> “Visão de Dono!” Colaboradores que vestem a camisa da empresa e se empenham para produzir resultados positivos, como se fossem os proprietários do negócio.</p>
+      <p><strong>TRABALHO EM EQUIPE:</strong> Agir de forma interdependente, gerir conflitos com sabedoria e relacionar-se de forma inteligente. Garantir a união de habilidades complementares para alcançar um objetivo maior.</p>
+      <p><strong>GESTÃO DO CONHECIMENTO:</strong> Multiplicar os seus conhecimentos ao compartilhá-los com seus superiores, colegas, subordinados, clientes e fornecedores.</p>
+      <p><strong>LIDERANÇA:</strong> Motivar, delegar, inspirar, orientar, engajar e desenvolver sua equipe na busca por resultados. Ser diferenciado e conquistar excelentes oportunidades. Visão de dono, preocupam-se como se fossem os proprietários do negócio.</p>
+      <p><strong>VISÃO SISTÊMICA:</strong> Perceber a integração entre as áreas. Entender o objetivo único da companhia (gerar lucro com venda), encontrar soluções que agilizem o trabalho de sua área ou das áreas interligadas. Avaliar dados, sistemas e processos para rever as áreas do negócio. Visão empresarial com a análise de sistemas e multiprocessos simultaneamente.</p>
+      <p><strong>PLANEJAMENTO FUTURO:</strong> Demonstrar capacidade em planejar atividades de negócios e implementar projetos com sucesso. Identificar tendências e desenvolvimento do seu setor. Antecipar os obstáculos e desenvolver planos de contingência.</p>
+      <p><strong>GESTÃO DE MUDANÇAS:</strong> Auxiliar a gerir o impacto da mudança na equipe. Adotar mudanças e propor formas de trabalho mais eficazes. Planejar a comunicação de forma efetiva.</p>
+      <p><strong>GESTÃO ESTRATÉGICA:</strong> Avaliar dados, sistemas e processos para rever as áreas do negócio. Visão empresarial com análise de sistema e multiprocessos simultaneamente.</p>
+      <p><strong>GESTÃO DO DESEMPENHO:</strong> Garantir que o colaborador contribua para as metas do departamento e organização.</p>
+    </div>
+  </div>
+
+  <script>
+    // Modal de Boas-Vindas
+    window.onload = function () {
+      const modalBemVindo = document.getElementById("modalBemVindo");
+      const closeBemVindo = document.getElementById("closeBemVindo");
+
+      modalBemVindo.style.display = "block";
+
+      closeBemVindo.onclick = function () {
+        modalBemVindo.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target === modalBemVindo) {
+          modalBemVindo.style.display = "none";
+        }
+      };
+    };
+  </script>
 
   <script src="script.js"></script>
 </body>
