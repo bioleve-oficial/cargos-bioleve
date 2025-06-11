@@ -60,11 +60,6 @@ const data = {
         competencia: "CULTURA DE SEGURANÇA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA."
       },
       {
-        nome: "OPERADOR DE MAQUINA II",
-        descricao: "Opera a empilhadeira para movimentar, armazenar e organizar produtos no estoque de maneira eficiente. Ele também é responsável pela carga e descarga de materiais, realiza a conferência de produtos e mantém a segurança e organização do armazém, com maior autonomia e responsabilidade.",
-        competencia: "CULTURA DE SEGURANÇA; DISCIPLINA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; "
-      },
-      {
         nome: "OPERADOR DE PRODUÇÃO I",
         descricao: "•	Aplicar os procedimentos do sistema de gestão da Qualidade; •	Preparar, diariamente, a máquina sopro para a fabricação de frascos em polipropileno conforme Ordens de Produção;•	Abastecer o forno com pré-forma necessária para iniciar a produção; •	Acionar o equipamento e acompanhar o processo fazendo pequenos ajustes, se necessários;•	Avaliar a qualidade do produto (transparência, circunferência, formação do fundo; •	Separar peças reprovadas para refugo ou recuperação para qualidade. •	Registrar o volume de peças produzidas e refugadas para avalição da qualidade; •	Zelar pela organização, limpeza e conservação do posto de trabalho, acessórios e instrumentos; •	Executar outras tarefas relacionadas com cargo, a critério do superior;•	Auxiliar nos trabalhos de carga e descarga de materiais diversos.•	Reportar problemas na linha de produção aos líderes imediatos;•	Abastecer a máquina com rótulos e insumos;",
         competencia: "CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO; "
@@ -117,11 +112,6 @@ const data = {
         descricao:"•	Aplicar os procedimentos do sistema de gestão da Qualidade; •	Preparar, diariamente, a máquina sopro para a fabricação de frascos em polipropileno conforme Ordens de Produção;•	Abastecer o forno com pré-forma necessária para iniciar a produção; •	Acionar o equipamento e acompanhar o processo fazendo pequenos ajustes, se necessários;•	Avaliar a qualidade do produto (transparência, circunferência, formação do fundo; •	Separar peças reprovadas para refugo ou recuperação para qualidade. •	Registrar o volume de peças produzidas e refugadas para avalição da qualidade; •	Zelar pela organização, limpeza e conservação do posto de trabalho, acessórios e instrumentos; •	Executar outras tarefas relacionadas com cargo, a critério do superior;•	Auxiliar nos trabalhos de carga e descarga de materiais diversos.•	Reportar problemas na linha de produção aos líderes imediatos;•	Abastecer a máquina com rótulos e insumos;•	Limpar o equipamento ao final de cada processo produtivo;•	Fazer configuração de set up e troca de molde, ajuste de parâmetros de produção; •	Ligar o equipamento regular a temperatura de processo; •	Conceito de temperatura por zona do frasco (Gargalo, meio e fundo); •	Preparar máquinas para empacotar e envasar;•	Realizar os procedimentos de limpeza e sanitização.",
         competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO."
       },
-      {
-        nome:"FALTA PREEENCHER CARGO",
-        descricao:"",
-        competencia:""
-      },
     ],
 
     "ENVASE MIX": [
@@ -139,11 +129,6 @@ const data = {
         nome :"AUXILIAR LINHA PRODUÇÃO III",
         descricao:"•	Fazer avaliação visual dos frascos no aéreo, atentando-se aos requisitos de qualidade tais como: rebarba, manchas e frasco amassado;•	Descartar frasco não-conforme e informar o operador e ou superior imediato;•	Acondicionar os frascos nas embalagens, conforme especificação do cliente;•	Identificar o produto acabado com etiqueta apropriada ao que foi produzido;•	Zelar pela organização, limpeza e conservação do local de trabalho e, instalações e maquinas;•	Embalar produtos;•	Paletização manual de pacotes e controlar os paletes; Realizar o abastecimento da máquina com galões para higienização;•	Efetuar o carregamento e descarregamento dos caminhões com galões de água para transporte.•	Pesagem das perdas das linhas;•	Destravar embalagens no transporte aéreo; •	Abastecer o forno com pré-forma necessária para iniciar a produção;•	Levar palete formado e caixa cheia de garrafa pronta;•	Abastecer o silo de pré-forma;•	Auxiliar na pesagem de insumos;•	Auxiliar o operador na operação das máquinas.",
         competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO."
-     },
-     {
-        nome :"FALTA PREENCHER CARGO",
-        descricao:"",
-        competencia:""
      },
      {
         nome :"LIDER DE PRODUÇÃO",
@@ -210,9 +195,9 @@ const data = {
 
      },
      {
-       nome: "falta preencher ", 
-       descricao: "",
-       competencia: "",
+       nome: "SUPERV ELETRICA III", 
+       descricao: "Planejar e implementar melhorias nos sistemas elétricos da planta.Supervisionar grandes projetos de infraestrutura elétrica (ampliações, upgrades, modernizações).Analisar indicadores de desempenho (KPIs) e propor soluções para aumento de eficiência energética e redução de falhas.Atuar como responsável técnico da área junto a órgãos fiscalizadores (quando aplicável).Participar de auditorias internas e externas.Desenvolver líderes técnicos (encarregados, técnicos sênior) e promover uma cultura de excelência operacional.",
+       competencia: "CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA.",
 
      },
      {
@@ -285,9 +270,9 @@ const data = {
       competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO."
      },
      {
-      nome:"AUXILIAR ADMINISTRATIVO DE PRODUÇÃO II FALTA PREENCHER",
-      descricao:"",
-      competencia:""
+      nome:"AUXILIAR ADMINISTRATIVO DE PRODUÇÃO II",
+      descricao:"Consolidar dados de produção para relatórios diários, semanais e mensais.Controlar indicadores de produção (eficiência, desperdício, produtividade).Auxiliar na programação de produção, verificando ordens de produção e necessidades de matéria-prima.Acompanhar estoque e consumo de insumos produtivos e administrativos.Interagir com outros setores (Qualidade, Logística, RH) para garantir o fluxo de informações.Identificar e propor melhorias em processos administrativos da produção.",
+      competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO."
      },
      {
       nome:"AUXILIAR ADMINISTRATIVO",
@@ -321,8 +306,8 @@ const data = {
         competencia: "CULTURA DE SEGURANÇA; DISCIPLINA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO."
       },   
       {
-        nome: "MOTORISTA III",
-        descricao: "Executar viagens de longa distância, cargas sensíveis ou de alto valor.Conduzir veículos articulados ou especiais, como bitrens ou caminhões-tanque (quando aplicável).Garantir total conformidade com normas de trânsito, segurança e meio ambiente.Treinar e orientar motoristas iniciantes ou em fase de integração.Identificar falhas mecânicas e acionar suporte adequado com clareza.Representar a empresa com profissionalismo durante o transporte.",
+        nome: "MOTORISTA II",
+        descricao: "Conduzir veículos leves ou pesados (ex: caminhões) em rotas regionais.Planejar rotas com base em tempo, distância e condições de tráfego.Realizar inspeção preventiva do veículo e comunicar necessidade de manutenção.Preencher corretamente relatórios de viagem, notas fiscais e checklists.Interagir com clientes ou pontos de entrega, mantendo postura profissional.Auxiliar em manobras e descarregamentos quando necessário.",
         competencia: "CULTURA DE SEGURANÇA; DISCIPLINA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO."
       },
       {
@@ -465,11 +450,6 @@ const data = {
         descricao:"Executar viagens de longa distância, cargas sensíveis ou de alto valor.Conduzir veículos articulados ou especiais, como bitrens ou caminhões-tanque (quando aplicável).Garantir total conformidade com normas de trânsito, segurança e meio ambiente.Treinar e orientar motoristas iniciantes ou em fase de integração.Identificar falhas mecânicas e acionar suporte adequado com clareza.Representar a empresa com profissionalismo durante o transporte.",
         competencia:"CULTURA DE SEGURANÇA; DISCIPLINA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; "
       },
-      {
-        nome:"CHEFE MOTORISTA (FALTA PREENCHER)",
-        descricao:"",
-        competencia:""
-      },
     ],
 
     "COMPRAS": [
@@ -528,9 +508,9 @@ const data = {
         competencia:"CULTURA DE SEGURANÇA; DISCIPLINA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; "
       },
       {
-        nome:"COORDENADOR DE CONTROLADORIA III(FALTA PREENCHER)",
-        descricao:"",
-        competencia:""
+        nome:"COORDENADOR DE CONTROLADORIA III",
+        descricao:"Liderar projetos de melhoria da performance financeira e estrutura de custos da empresa.Desenvolver modelos financeiros de apoio à decisão (cenários, viabilidade, investimentos).Consolidar e apresentar análises de resultados à diretoria e conselhos.Atuar de forma consultiva junto a outras áreas para garantir aderência às metas orçamentárias.Supervisionar e desenvolver equipe técnica e analítica.Ser agente de governança e compliance nas práticas de controladoria.",
+        competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO."
       },
     ],  
     "DEPARTAMENTO PESSOAL":[
@@ -540,30 +520,20 @@ const data = {
         competencia:"CULTURA DE SEGURANÇA; DISCIPLINA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; "
       },  
       {
-        nome:"ANALISTA DE RH JN(FALTA PREENCHER)",
-        descricao:"",
-        competencia:""
+        nome:"ANALISTA DE RH I",
+        descricao:"Auxiliar nos processos de admissão e demissão.Realizar lançamentos simples em folha de pagamento.Apoiar no controle de ponto e envio de documentos para contabilidade.Organizar arquivos de colaboradores (físicos e digitais).Prestar atendimento básico a funcionários sobre holerites e benefícios.",
+        competencia:"CULTURA DE SEGURANÇA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO."
       },  
       {
-        nome:"ANALISTA DE RH PL(FALTA PREENCHER)",
-        descricao:"",
-        competencia:""
-      },  
-      {
-        nome:"AUXILIAR DE LOGISTICA(FALTA PREENCHER)",
-        descricao:"Gerenciar o departamento de recursos humanos, lidando com folhas de pagamento, recrutamento e seleção, admissões e demissões de funcionários, treinamento, cálculos de rescisão e férias, controle de ponto eletrônico, além de criar planos de benefícios e salários.",
-        competencia:""
+        nome:"ANALISTA DE RH II",
+        descricao:"Realizar folha de pagamento, encargos (INSS, FGTS, IRRF) e obrigações acessórias (eSocial, CAGED, SEFIP).Controlar férias, afastamentos, benefícios e rescisões contratuais.Acompanhar convenções coletivas e aplicar corretamente os acordos.Atender auditorias internas e fiscalizações trabalhistas.Esclarecer dúvidas dos colaboradores e apoiar a liderança em questões de DP.Emitir relatórios de não conformidade e acompanhar ações corretivas.Contribuir com sugestões de melhorias nos processos de controle.Treinar operadores quanto às boas práticas de processo e qualidade.",
+        competencia:"CULTURA DE SEGURANÇA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO."
       },  
       {
         nome:"COORDENADOR DE RH",
         descricao:"Gerenciar o departamento de recursos humanos, lidando com folhas de pagamento, recrutamento e seleção, admissões e demissões de funcionários, treinamento, cálculos de rescisão e férias, controle de ponto eletrônico, além de criar planos de benefícios e salários.",
         competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO. "
       },  
-      {
-        nome:"ESPECIALISTA ADMINISTRATIVO III",
-        descricao:"",
-        competencia:""
-      },
     ],  
     "FINANCEIRO":[
     {
@@ -580,11 +550,6 @@ const data = {
       nome:"AUXILIAR ADMINISTRATIVO I ",
       descricao:"Atualizar planilhas de controle e relatórios simples.Apoiar processos administrativos como emissão de documentos, arquivos e organização de contratos.Atender solicitações internas e externas de baixa complexidade.Lançar dados em sistemas internos conforme orientação.Apoiar na gestão de documentos e controle de prazos.Prestar atendimento básico a funcionários sobre holerites e benefícios.",
       competencia:"CULTURA DE SEGURANÇA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO."
-    },  
-    {
-      nome:"AUXILIAR ADMINISTRATIVO I ",
-      descricao:"Atualizar planilhas de controle e relatórios simples.Apoiar processos administrativos como emissão de documentos, arquivos e organização de contratos.Atender solicitações internas e externas de baixa complexidade.Lançar dados em sistemas internos conforme orientação.Apoiar na gestão de documentos e controle de prazos.Prestar atendimento básico a funcionários sobre holerites e benefícios.",
-      competencia:"CULTURA DE SEGURANÇA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO"
     },  
     {
       nome:"COORDENADOR ADMINISTRATIVO III",
@@ -627,11 +592,6 @@ const data = {
       descricao:"Apoiar na criação e atualização de conteúdo para redes sociais e materiais promocionais.Auxiliar na organização de eventos e ações de marketing.Realizar monitoramento de campanhas e coleta de dados simples.Atualizar bancos de dados e listas de contatos.Dar suporte administrativo à equipe de marketing.",
       competencia:"CULTURA DE SEGURANÇA; DISCIPLINA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO; "
     },
-    {
-      nome:"ASSISTENTE DE MARKENTING I(REPETIDO",
-      descricao:"",
-      competencia:""
-    },
   ],
    "SERVIÇOS GERAIS":[
     {
@@ -643,12 +603,7 @@ const data = {
       nome:"AUXILIAR DE SERVIOS GERAIS I",
       descricao:"Realizar limpeza básica de ambientes (pisos, janelas, banheiros, mobiliário).Recolher lixo e manter áreas comuns organizadas.Auxiliar na reposição de materiais de higiene.Apoiar na organização de salas, refeitórios e áreas externas.Seguir normas básicas de higiene e segurança.",
       competencia:"" 
-    },  
-    {
-      nome:"AUXILIAR DE SERVIÇOS GERAIS I(REPETIDO)",
-      descricao:"",
-      competencia:"" 
-    },  
+    },    
     {
       nome:"AUXILIAR DE SERVIÇOS GERAIS II",
       descricao:"Realizar limpeza e conservação de áreas internas e externas com eficiência.Operar equipamentos de limpeza (enceradeira, lavadora, etc.).Identificar necessidades de manutenção e comunicar à equipe responsável.Controlar o uso de materiais e solicitar reposições.Colaborar com a organização de eventos e movimentação de móveis ou materiais.",
@@ -664,16 +619,6 @@ const data = {
       descricao:"Diagnosticar falhas complexas e planejar ações corretivas e preventivas.Coordenar tecnicamente a equipe ou orientar profissionais mais novos.Elaborar planos de manutenção e acompanhar cronogramas.Monitorar o cumprimento de normas técnicas e de segurança.Apoiar a liderança na gestão de contratos e melhorias estruturais.",
       competencia:"CULTURA DE SEGURANÇA; DISCIPLINA; FLEXIBILIDADE; INICIATIVA; VISÃO DO NEGOCIO;" 
     },  
-    {
-      nome:"OFICIAL DE MANUTENÇÃO PREDIAL II(REPETIDO)",
-      descricao:"",
-      competencia:"" 
-    },  
-    {
-      nome:"OFICIAL DE MANUTENÇÃO PREDIAL II(REPETIDO)",
-      descricao:"",
-      competencia:"" 
-    },
    ],  
     "TI":[
       {
@@ -695,17 +640,7 @@ const data = {
         nome:"SUPERVISOR DE TI III",
         descricao:"Planejar, liderar e executar projetos estratégicos de tecnologia (transformação digital, migração para nuvem, cibersegurança etc.).Supervisionar a operação e evolução da infraestrutura de TI com foco em eficiência e escalabilidade.Garantir a segurança da informação e conformidade com normas e regulamentações.Atuar diretamente com diretoria e demais áreas para propor soluções tecnológicas que impulsionem o negócio.Desenvolver talentos técnicos, promover cultura de inovação e boas práticas de gestão de TI.",
         competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO. "
-      },    
-      {
-        nome:"TECNICO DE INFORMATICA JR(FALTA PREENCHER)",
-        descricao:"",
-        competencia:""
-      },    
-      {
-        nome:"TECNICO DE INFORMATICA PL(FALTA PREENCHER)",
-        descricao:"",
-        competencia:""
-      },    
+      },      
     ],   
 },
    "COMERCIAL": {
@@ -909,12 +844,7 @@ const data = {
         nome: "GERENTE DE CONTROLE DE QUALIDADE I",
         descricao: "Supervisionar o cumprimento de procedimentos de controle de qualidade nas operações.Apoiar a liderança técnica na análise de não conformidades.Auxiliar no desenvolvimento e atualização de documentos da qualidade.Gerir equipe técnica de forma orientada e com acompanhamento direto da diretoria.Contribuir para a manutenção das certificações e boas práticas.",
         competencia: "CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO. "
-      },
-      {
-        nome:"ENC CONTR QD II(FALTA PREENCHER)",
-        descricao:"",
-        competencia:""
-      },    
+      },   
     ],
   }
 };
