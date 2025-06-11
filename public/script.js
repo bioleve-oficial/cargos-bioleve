@@ -641,6 +641,16 @@ const data = {
         descricao:"Planejar, liderar e executar projetos estratégicos de tecnologia (transformação digital, migração para nuvem, cibersegurança etc.).Supervisionar a operação e evolução da infraestrutura de TI com foco em eficiência e escalabilidade.Garantir a segurança da informação e conformidade com normas e regulamentações.Atuar diretamente com diretoria e demais áreas para propor soluções tecnológicas que impulsionem o negócio.Desenvolver talentos técnicos, promover cultura de inovação e boas práticas de gestão de TI.",
         competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO. "
       },      
+      {
+        nome:"TECNICO DE INFORMATICA I",
+        descricao:"Instalar softwares e sistemas operacionais.Montar, configurar e realizar manutenção básica em computadores e periféricos.Prestar suporte presencial e remoto aos usuários (ex: impressoras, rede, acesso ao sistema).Realizar testes simples de funcionamento e reportar falhas.Seguir procedimentos definidos pela equipe de TI.",
+        competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO. "
+      },      
+      {
+        nome:"TECNICO DE INFORMATICA II",
+        descricao:"Diagnosticar e resolver problemas em hardware, software e redes.Administrar servidores locais (AD, arquivos, impressoras).Configurar roteadores, switches, firewalls e sistemas de backup.Controlar ativos de TI e atualizar documentações técnicas.Colaborar na implantação de novos sistemas ou atualizações de infraestrutura.",
+        competencia:"CULTURA DE SEGURANÇA; TRABALHO EM EQUIPE; GESTÃO DO CONHECIMENTO; LIDERANÇA; VISÃO SISTEMICA; GESTÃO DO DESEMPENHO. "
+      },      
     ],   
 },
    "COMERCIAL": {
