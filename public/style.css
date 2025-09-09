@@ -150,6 +150,233 @@ body {
   align-items: center;
 }
 
+.texto-branco {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Modal Bem-vindo — organização de texto */
+.bemvindo-title {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.bemvindo .intro {
+  margin: 6px 0 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bemvindo .competencias {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bemvindo .competencias li {
+  line-height: 1.6;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px 14px;
+  break-inside: avoid;
+}
+
+@media (min-width: 900px) {
+  .bemvindo .competencias {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+  }
+}
+
+/* ====== Dept & Cargo UI Revamp (sem alterar textos) ====== */
+
+/* Cards de departamentos */
+.department-card {
+  border: 1px solid #e5e7eb;
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 8px 28px rgba(2,6,23,.06);
+  transition: box-shadow .2s ease, transform .12s ease;
+}
+.department-card:hover {
+  box-shadow: 0 14px 40px rgba(2,6,23,.10);
+  transform: translateY(-2px);
+}
+
+/* Títulos dos departamentos */
+.department-title {
+  font-weight: 800;
+  font-size: clamp(16px, 2.2vw, 20px);
+  margin-bottom: 10px;
+  color: #0f172a;
+  letter-spacing: .3px;
+}
+
+/* Botão “Visualizar cargos” */
+.department-button {
+  appearance: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #06b6d4, #0284c7);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .2s ease, filter .2s ease;
+  box-shadow: 0 10px 22px rgba(2,132,199,.24);
+  margin-bottom: 12px;
+}
+.department-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(2,132,199,.30);
+  filter: saturate(1.05);
+}
+
+/* Lista de cargos (grid) */
+.cargo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+/* Cartão de cargo */
+.cargo-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(2,6,23,.05);
+  transition: transform .12s ease, box-shadow .18s ease;
+}
+.cargo-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(2,6,23,.1);
+}
+.cargo-card span {
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: .2px;
+  line-height: 1.2;
+}
+
+/* Botão “Visualizar” nos cargos */
+.cargo-card button {
+  appearance: none;
+  border: 1px solid #dbeafe;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background .2s ease, transform .12s ease;
+}
+.cargo-card button:hover {
+  background: #e0f2fe;
+  transform: translateY(-1px);
+}
+
+/* Modal (aproveita seu modal existente) */
+.modal-content h2#modalTitle {
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+#modalDescription {
+  margin-top: 8px;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+/* Competências em “chips” */
+.competencias-wrap {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.competencia-chip {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #e0e7ff;
+  white-space: nowrap;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .department-button { width: 100%; }
+  .cargo-card { padding: 10px 12px; }
+  .cargo-card button { padding: 7px 10px; }
+}
+.competencia-chip {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #e0e7ff;
+  margin: 0 6px 6px 0; /* espaço entre chips */
+}
+/* Wallpaper full-screen com overlay para legibilidade */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient( to bottom, rgba(2,6,23,.55), rgba(2,6,23,.35) ),
+    image-set(
+      url("/public/img/fundo-bioleve.jpg") type("image/jpeg")
+    );
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Grade sutil por cima do wallpaper (opcional) */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(#94a3b81a 1px, transparent 1px);
+  background-size: 16px 16px;
+  pointer-events: none;
+}
+
+/* Em dark-mode, overlay um pouco mais escuro */
+@media (prefers-color-scheme: dark) {
+  body::before {
+    background-image:
+      linear-gradient( to bottom, rgba(2,6,23,.65), rgba(2,6,23,.45) ),
+      image-set(
+        url("/public/img/fundo-bioleve.jpg") type("image/jpeg")
+      );
+  }
+}
+
+/* Em iOS/Android evitar parallax jank */
+@media (max-width: 768px) {
+  body::before { background-attachment: scroll; }
+}
+
+
 .hidden {
   display: none;
 }

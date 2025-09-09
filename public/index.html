@@ -5,91 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cargos Bioleve</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Melhora renderização e cor do tema (opcional, sem texto) -->
+  <meta name="theme-color" content="#0ea5e9" />
 </head>
 <body>
-  <div class="container">
+  <!-- Região principal para leitura de tela -->
+  <main id="app" class="container">
     <img class="logo" src="img/logo.png" alt="Logo Bioleve" />
-    <h1></h1>
+    <!-- h1 vazio mantido, mas escondido de leitores -->
+    <h1 aria-hidden="true"></h1>
 
-    <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Digite o nome do cargo..." />
-      <button id="searchButton">🔍</button>
+    <!-- Busca dentro de <form> para Enter funcionar em todos os navegadores -->
+    <form class="search-container" role="search" aria-label="Buscar cargo" onsubmit="event.preventDefault(); searchCargos();">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Digite o nome do cargo..."
+        autocomplete="off"
+        inputmode="search"
+        aria-label="Digite o nome do cargo"
+      />
+      <button id="searchButton" type="submit" aria-label="Buscar">🔍</button>
+    </form>
+
+    <h2 class="texto-branco">
+      Clique na sua área de trabalho abaixo e visualize a descrição do seu cargo! =)
+    </h2>
+
+    <!-- Troca de <div> para <button> deixa acessível ao teclado.
+         O TEXTO e data-area foram mantidos. -->
+    <div class="main-cards" role="list">
+      <!-- <button class="main-card" data-area="ADMINISTRACAO" type="button">ADMINISTRAÇÃO</button>
+      <button class="main-card" data-area="FABRICA" type="button">FÁBRICA</button> -->
+      <button class="main-card" data-area="PRODUÇÃO FÁBRICA" type="button" role="listitem" title="Abrir PRODUÇÃO FÁBRICA">PRODUÇÃO FÁBRICA</button>
+      <button class="main-card" data-area="EXPEDICAO" type="button" role="listitem" title="Abrir EXPEDIÇÃO">EXPEDIÇÃO</button>
+      <button class="main-card" data-area="ADM" type="button" role="listitem" title="Abrir ADM">ADM</button>
+      <button class="main-card" data-area="COMERCIAL" type="button" role="listitem" title="Abrir COMERCIAL">COMERCIAL</button>
+      <button class="main-card" data-area="DIRETORIA PRESIDÊNCIA" type="button" role="listitem" title="Abrir DIRETORIA/PRESIDÊNCIA">DIRETORIA/PRESIDÊNCIA</button>
+      <button class="main-card" data-area="QUALIDADE" type="button" role="listitem" title="Abrir QUALIDADE">QUALIDADE</button>
     </div>
 
-    <h2 class="texto">Clique na sua área de trabalho abaixo e visualize a descrição do seu cargo! =)</h2>
-
-    <div class="main-cards">
-     <!-- <div class="main-card" data-area="ADMINISTRACAO">ADMINISTRAÇÃO</div>
-      <div class="main-card" data-area="FABRICA">FÁBRICA</div> -->
-      <div class="main-card" data-area="PRODUÇÃO FÁBRICA">PRODUÇÃO FÁBRICA</div>
-      <div class="main-card" data-area="EXPEDICAO">EXPEDIÇÃO</div>
-      <div class="main-card" data-area="ADM">ADM</div>
-      <div class="main-card" data-area="COMERCIAL">COMERCIAL</div>
-      <div class="main-card" data-area="DIRETORIA PRESIDÊNCIA">DIRETORIA/PRESIDÊNCIA</div>
-      <div class="main-card" data-area="QUALIDADE">QUALIDADE</div>
-    </div>
-
-    <div id="departments" class="departments"></div>
-  </div>
+    <div id="departments" class="departments" aria-live="polite"></div>
+  </main>
 
   <!-- Modais -->
-  <div id="modal" class="modal hidden">
+  <!-- Dialog principal -->
+  <div
+    id="modal"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+    aria-describedby="modalDescription modalCompetencia"
+    tabindex="-1"
+  >
     <div class="modal-content">
-      <span id="closeModal" class="close-button">&times;</span>
+      <button id="closeModal" class="close-button" type="button" aria-label="Fechar">&times;</button>
       <h2 id="modalTitle"></h2>
       <p id="modalDescription"></p>
       <p id="modalCompetencia" style="margin-top: 10px; font-weight: bold;"></p>
     </div>
   </div>
 
-  <div id="modalErro" class="modal hidden">
+  <!-- Dialog de erro de busca -->
+  <div
+    id="modalErro"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="tituloErro"
+    tabindex="-1"
+  >
     <div class="modal-content">
-      <span id="closeModalErro" class="close-button">&times;</span>
-      <h2>Ops, nenhum cargo encontrado.</h2>
+      <button id="closeModalErro" class="close-button" type="button" aria-label="Fechar">&times;</button>
+      <h2 id="tituloErro">Ops, nenhum cargo encontrado.</h2>
     </div>
   </div>
 
-    <div id="modalBemVindo" class="modal hidden">
-    <div class="modal-content">
-      <span id="closeBemVindo" class="close-button">&times;</span>
-      <h2>BEM-VINDOS À VISUALIZAÇÃO DE CARGOS BIOLEVE</h2>
-      <p>
-        ABAIXO ESTÁ A DESCRIÇÃO DAS COMPETÊNCIAS:<br /><br />
-        <strong>CULTURA DE SEGURANÇA:</strong> Ser um estimulo a seus colegas para se envolverem diretamente na prevenção de acidentes.
-        <br>
-         Colaborador precisa estar atento as condições e ações da companhia para alertar a todo momento qualquer situação de risco.<br />
-        <strong>FLEXIBILIDADE:</strong>Profissionais que se ajustem as mais diversas situações, mobilizando seu conhecimento e experiências
-        <br>
-         para aproveitá-las de forma produtiva e se inserindo no local de trabalho de forma colaborativa se comprometendo até o final da implementação da mudança.<br />
-        <strong>DISCIPLINA:</strong> Apresenta disciplina na execução das atividades assegurando que suas entregas atendam ao prazo, ao custo e a qualidade determinados bem como,
-        <br>
-         respeito as diretrizes internas, como normas circulares e regulamentos.<br />
-        <strong>INICIATIVA:</strong> Ser proativo. Colaboradores que percebem rapidamente os problemas e oportunidades e, mais que isso, prontificam-se a resolvê-los.
-        <br>
-         Agir com velocidade e inovação.<br />
-        <strong>VISÃO DO NEGÓCIO:</strong> “Visão de Dono!” Colaboradores que vestem a camisa da empresa e se empenham para produzir resultados positivos,
-        <br>
-         como se fossem os proprietários do negócio.<br />
-        <strong>TRABALHO EM EQUIPE:</strong> Agir de forma interdependente, gerir conflitos com sabedoria e relacionar-se de forma inteligência.
-        <br>
-         Garantir a união de habilidades complementares para alcançar um objetivo maior.<br />
-        <strong>GESTÃO DO CONHECIMENTO:</strong> Multiplicar os seus conhecimentos ao compartilhá-los com seus superiores, colegas, subordinados, clientes e fornecedores.<br />
-        <strong>LIDERANÇA:</strong> Motivar, delegar, inspirar, orientar, engajar e desenvolver sua equipe na busca por resultados. Ser diferenciado e conquistar excelentes oportunidades.
-        <br>
-         Visão de dono, preocupam-se como se fossem os proprietários do negócio.<br />
-        <strong>VISÃO SISTÊMICA:</strong> Perceber a integração entre as áreas. Entender o objetivo único da companhia (gerar lucro com venda), encontrar soluções que agilizem o trabalho
-        <br>
-         de sua área ou das áreas interligadas. Avaliar dados, sistemas e processos para rever as áreas do negócio. Visão empresarial com a análise de sistemas e multiprocessos simultaneamente.<br />
-        <strong>PLANEJAMENTO FUTURO:</strong> Demonstrar capacidade em planejar atividades de negócios e implementar projetos com sucesso. Identificar tendências e desenvolvimento do seu setor.
-        <br>
-         Antecipar os obstáculos e desenvolver planos de contingencia.<br />
-        <strong>GESTÃO DE MUDANÇAS:</strong> Auxiliar a gerir o impacto da mudança na equipe. Adotar mudanças e propor formas de trabalho mais eficazes. Planejar a comunicação de forma efetiva.<br />
-        <strong>GESTÃO ESTRATÉGICA:</strong> Avaliar dados, sistema e processos para rever as áreas do negócio. Visão empresarial com analise de sistema e multiprocessos simultaneamente.<br />
-        <strong>GESTÃO DO DESEMPENHO:</strong>Garantir que o colaborador contribua para as metas do departamento e organização.
-      </p>
+  <!-- Boas-vindas (você já atualizou; mantive igual, só acrescentei ARIA) -->
+  <div
+    id="modalBemVindo"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="tituloBemVindo"
+    tabindex="-1"
+  >
+    <div class="modal-content bemvindo">
+      <button id="closeBemVindo" class="close-button" type="button" aria-label="Fechar">&times;</button>
+
+      <!-- Título centralizado -->
+      <h2 id="tituloBemVindo" class="bemvindo-title">BEM-VINDOS À VISUALIZAÇÃO DE CARGOS BIOLEVE</h2>
+
+      <p class="intro">ABAIXO ESTÁ A DESCRIÇÃO DAS COMPETÊNCIAS:</p>
+
+      <ul class="competencias">
+        <li><strong>CULTURA DE SEGURANÇA:</strong> Ser um estimulo a seus colegas para se envolverem diretamente na prevenção de acidentes. Colaborador precisa estar atento as condições e ações da companhia para alertar a todo momento qualquer situação de risco.</li>
+        <li><strong>FLEXIBILIDADE:</strong> Profissionais que se ajustem as mais diversas situações, mobilizando seu conhecimento e experiências para aproveitá-las de forma produtiva e se inserindo no local de trabalho de forma colaborativa se comprometendo até o final da implementação da mudança.</li>
+        <li><strong>DISCIPLINA:</strong> Apresenta disciplina na execução das atividades assegurando que suas entregas atendam ao prazo, ao custo e a qualidade determinados bem como, respeito as diretrizes internas, como normas circulares e regulamentos.</li>
+        <li><strong>INICIATIVA:</strong> Ser proativo. Colaboradores que percebem rapidamente os problemas e oportunidades e, mais que isso, prontificam-se a resolvê-los. Agir com velocidade e inovação.</li>
+        <li><strong>VISÃO DO NEGÓCIO:</strong> “Visão de Dono!” Colaboradores que vestem a camisa da empresa e se empenham para produzir resultados positivos, como se fossem os proprietários do negócio.</li>
+        <li><strong>TRABALHO EM EQUIPE:</strong> Agir de forma interdependente, gerir conflitos com sabedoria e relacionar-se de forma inteligência. Garantir a união de habilidades complementares para alcançar um objetivo maior.</li>
+        <li><strong>GESTÃO DO CONHECIMENTO:</strong> Multiplicar os seus conhecimentos ao compartilhá-los com seus superiores, colegas, subordinados, clientes e fornecedores.</li>
+        <li><strong>LIDERANÇA:</strong> Motivar, delegar, inspirar, orientar, engajar e desenvolver sua equipe na busca por resultados. Ser diferenciado e conquistar excelentes oportunidades. Visão de dono, preocupam-se como se fossem os proprietários do negócio.</li>
+        <li><strong>VISÃO SISTÊMICA:</strong> Perceber a integração entre as áreas. Entender o objetivo único da companhia (gerar lucro com venda), encontrar soluções que agilizem o trabalho de sua área ou das áreas interligadas. Avaliar dados, sistemas e processos para rever as áreas do negócio. Visão empresarial com a análise de sistemas e multiprocessos simultaneamente.</li>
+        <li><strong>PLANEJAMENTO FUTURO:</strong> Demonstrar capacidade em planejar atividades de negócios e implementar projetos com sucesso. Identificar tendências e desenvolvimento do seu setor. Antecipar os obstáculos e desenvolver planos de contingencia.</li>
+        <li><strong>GESTÃO DE MUDANÇAS:</strong> Auxiliar a gerir o impacto da mudança na equipe. Adotar mudanças e propor formas de trabalho mais eficazes. Planejar a comunicação de forma efetiva.</li>
+        <li><strong>GESTÃO ESTRATÉGICA:</strong> Avaliar dados, sistema e processos para rever as áreas do negócio. Visão empresarial com analise de sistema e multiprocessos simultaneamente.</li>
+        <li><strong>GESTÃO DO DESEMPENHO:</strong> Garantir que o colaborador contribua para as metas do departamento e organização.</li>
+      </ul>
     </div>
   </div>
 
   <script src="script.js"></script>
+  <noscript>Ative o JavaScript para usar esta página.</noscript>
 </body>
 </html>
