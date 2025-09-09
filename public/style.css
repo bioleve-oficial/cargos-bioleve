@@ -370,6 +370,10 @@ body::after {
       );
   }
 }
+/* REMOVER/COMENTAR */
+.search-container { display:flex; flex-direction:column; gap:10px; align-items:center; }
+.search-container input { width:90%; }
+
 
 /* Em iOS/Android evitar parallax jank */
 @media (max-width: 768px) {
@@ -380,3 +384,53 @@ body::after {
 .hidden {
   display: none;
 }
+/* ===== Fundo responsivo com overlay (funciona em todas as resoluções) ===== */
+html, body { height: 100%; }
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background:
+    linear-gradient(to bottom, rgba(2,6,23,.55), rgba(2,6,23,.35)),
+    url("/img/fundo-bioleve.jpg") center/cover no-repeat;
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background-image: radial-gradient(#94a3b81a 1px, transparent 1px);
+  background-size:16px 16px;
+  pointer-events:none;
+}
+@media (prefers-color-scheme: dark){
+  body::before{
+    background:
+      linear-gradient(to bottom, rgba(2,6,23,.70), rgba(2,6,23,.50)),
+      url("/img/fundo-bioleve.jpg") center/cover no-repeat;
+  }
+}
+/* iOS/Android: evita jank de parallax */
+@media (max-width: 768px){ body::before{ background-attachment: scroll; } }
+
+/* ===== Ajustes visuais com Bootstrap ===== */
+.container{ max-width:900px; margin:0 auto; padding:20px; text-align:center; }
+.logo{ max-width:220px; width:60%; height:auto; display:block; margin:0 auto; }
+@media (max-width:576px){ .logo{ max-width:170px; width:75%; } }
+.texto-branco{ color:#fff; }
+
+/* Botão-card mantendo seu azul */
+.main-card.btn{
+  background-color:#00539C;
+  border-color:#00539C;
+  color:#fff;
+  border-width:2px;
+  border-radius:12px;
+  font-weight:700;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+  box-shadow:0 2px 5px rgba(0,0,0,.1);
+  transition:transform .12s ease, filter .2s ease;
+}
+.main-card.btn:hover{ transform:translateY(-1px); filter:brightness(1.05); }
